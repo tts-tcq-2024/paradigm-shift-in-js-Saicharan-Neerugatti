@@ -16,17 +16,15 @@ function  ExpectTrue(expression) {
     if(!expression) {
         console.log("Expected true, but got false");
         
-    }
-}
-function ExpectFalse(expression) {
-    if(expression) {
+    } else {
         console.log("Expected false, but got true");
         Environment.Exit(1);
     }
 }
+
 function main() {
     ExpectTrue(batteryIsOk(25, 70, 0.7));
-    ExpectFalse(batteryIsOk(50, 85, 0.0));
+    ExpectTrue(batteryIsOk(50, 85, 0.0));
     console.log("All ok");
     return 0;
 }

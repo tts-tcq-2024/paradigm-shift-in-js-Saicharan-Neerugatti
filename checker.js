@@ -17,7 +17,6 @@ function batteryIsOk(temperature,  soc,  chargeRate) {
 function  ExpectTrue(expression) {
     if(!expression) {
         console.log("Expected true, but got false");
-        
     }
 }
 function ExpectFalse(expression) {
